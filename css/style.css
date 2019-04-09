@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:400,500,700');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Teko', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.7)),
+                    url('../img/background.jpg');
+  background-color: black;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+/* Application Boundry */
+.boundry-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 80%;
+  background-image: linear-gradient( to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(14, 14, 14, 1));
+  box-shadow: -10px 10px 50px #ffffff20;
+  max-width: 1000px;
+}
+
+/* Left Side Week View Setup */
+.left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%
+}
+
+.left-container .week-view {
+  width: 80%;
+  height: 100%;
+}
+
+.left-container ol {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  padding: 3rem 0;
+  max-width: 250px;
+}
+
+.left-container li {
+  display: flex;
+  width: 100%;
+  background-image: linear-gradient( to bottom,
+    rgba(50, 50, 50, .9),
+    rgba(25, 25, 25, 1));
+  box-shadow: -1px 1px 5px #ffffff10;
+  border-radius: 7px;
+  margin: .7rem 0;
+  padding: 1rem .2rem;
+}
+
+.left-container .left-day {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  width: 60%;
+  color: rgba(190, 190, 190, 1);
+}
+
+.left-container .left-day h4 {
+  text-align: center;
+  vertical-align: center;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  width: 100%;
+}
+
+.left-container .left-day span {
+  width: 50%;
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+}
+
+.left-container .left-day h2 {
+  text-align: right;
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 50%;
+}
+
+.left-container .right-day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+/* Right Side Day View Setup */
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+.right-container .right-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  height: 85%;
+}
+
+.right-content .upper {
+  height: 60%;
+  display: flex;
+}
+
+.upper .location {
+  width: 60%;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.upper .location h2 {
+  margin-top: 2rem;
+}
+
+.upper .icon {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper .temperature-section {
+  display: flex;
+}
+
+.upper .icon h3 {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.upper .icon span {
+  font-size: 3rem;
+}
+
+.upper .icon p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.right-content .lower {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+
+.right-content .lower h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.right-content .lower h2 {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #000;
+  text-shadow: 0px 0px 2px #fff;
+}
